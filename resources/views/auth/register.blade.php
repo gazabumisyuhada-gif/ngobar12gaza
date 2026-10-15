@@ -16,6 +16,20 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+        <!-- NIS -->
+        <div class="mt-4">
+            <x-input-label for="nis" :value="__('NIS')" />
+            <x-text-input id="nis" class="block mt-1 w-full" type="text" name="nis" :value="old('nis')" required autocomplete="nis" />
+            <x-input-error :messages="$errors->get('nis')" class="mt-2" />
+        </div>
+
+        <!-- Kelas -->
+        <div class="mt-4">
+            <x-input-label for="kelas" :value="__('Kelas')" />
+            <x-text-input id="kelas" class="block mt-1 w-full" type="text" name="kelas" :value="old('kelas')" required autocomplete="kelas" />
+            <x-input-error :messages="$errors->get('kelas')" class="mt-2" />
+        </div>
+
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
