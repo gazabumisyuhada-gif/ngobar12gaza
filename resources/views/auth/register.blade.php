@@ -16,18 +16,16 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-        <!-- NIS -->
+        <!-- Alamat -->
         <div class="mt-4">
-            <x-input-label for="nis" :value="__('NIS')" />
-            <x-text-input id="nis" class="block mt-1 w-full" type="text" name="nis" :value="old('nis')" required autocomplete="nis" />
-            <x-input-error :messages="$errors->get('nis')" class="mt-2" />
+            <x-input-label for="alamat" :value="__('Alamat')" />
+            <x-text-input id="alamat" class="block mt-1 w-full" type="text" name="alamat" :value="old('alamat')" required autocomplete="alamat" />  
         </div>
 
-        <!-- Kelas -->
+        <!-- Telepon -->
         <div class="mt-4">
-            <x-input-label for="kelas" :value="__('Kelas')" />
-            <x-text-input id="kelas" class="block mt-1 w-full" type="text" name="kelas" :value="old('kelas')" required autocomplete="kelas" />
-            <x-input-error :messages="$errors->get('kelas')" class="mt-2" />
+            <x-input-label for="telepon" :value="__('Telepon')" />
+            <x-text-input id="telepon" class="block mt-1 w-full" type="text" name="telepon" :value="old('telepon')" required autocomplete="telepon" />
         </div>
 
         <!-- Password -->
