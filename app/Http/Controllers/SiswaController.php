@@ -31,17 +31,18 @@ class SiswaController extends Controller
     {
         $request->validate([
             'nis' => 'required|unique:siswas,nis|max:50',
-            'name' => 'required|string|max:255',
-            'rombel' => 'required|string|max:255',
-            'rayon' => 'required|string|max:255',
-            'alamat' => 'required|string|max:255',
-            'telepon' => 'required|string|max:20',
+            'nama' => 'required|string|max:255', // Pastikan baris ini ada
+            'kelas' => 'required|string|max:50',
+            'rayon' => 'required|string|max:50',
+            'no_telepon' => 'required|string|max:20',
+            'alamat' => 'required|string',
         ]);
 
+        // Menggunakan all() akan otomatis mengambil semua inputan form termasuk 'nama'
         Siswa::create($request->all());
-        return redirect()->route('siswas.index')->with('success', 'Siswa created successfully.');
-    }
 
+        return redirect()->route('siswas.index')->with('success', 'Data siswa berhasil ditambahkan.');
+    }
     
     public function show(Siswa $siswa)
     {
@@ -63,11 +64,11 @@ class SiswaController extends Controller
     {
         $request->validate([
             'nis' => 'required|unique:siswas,nis,' . $siswa->id,
-            'name' => 'required|string|max:255',
-            'rombel' => 'required|string|max:255',
+            'nama' => 'required|string|max:255',
+            'kelas' => 'required|string|max:255',
             'rayon' => 'required|string|max:255',
             'alamat' => 'required|string|max:255',
-            'telepon' => 'required|string|max:20',
+            'no_telepon' => 'required|string|max:20',
         ]);
 
         $siswa->update($request->all());

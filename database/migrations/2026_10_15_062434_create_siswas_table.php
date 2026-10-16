@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
             $table->string('nis')->unique();
-            $table->string('name');
-            $table->string('rombel');
+            $table->string('nama');
+            $table->string('kelas');
             $table->string('rayon');
             $table->string('alamat');
-            $table->string('telepon');
+            $table->string('no_telepon');
             $table->timestamps();
         });
     }

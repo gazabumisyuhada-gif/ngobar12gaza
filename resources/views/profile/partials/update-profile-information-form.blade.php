@@ -28,9 +28,9 @@
             <x-text-input id="alamat" name="alamat" type="text" class="mt-1 block w-full" :value="old('alamat', $user->alamat)" required autofocus autocomplete="alamat" />
             <x-input-error class="mt-2" :messages="$errors->get('alamat')" />
         </div>
-        <!-- Telepon -->
+        <!-- no_telepon -->
         <div class="mt-4">
-            <x-input-label for="telepon" :value="__('Telepon')" />
+            <x-input-label for="telepon" :value="__('telepon')" />
             <x-text-input id="telepon" name="telepon" type="text" class="mt-1 block w-full" :value="old('telepon', $user->telepon)" required autofocus autocomplete="telepon" />
             <x-input-error class="mt-2" :messages="$errors->get('telepon')" />
         </div> 

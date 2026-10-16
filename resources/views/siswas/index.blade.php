@@ -26,7 +26,7 @@
                             <th class="px-6 py-3 text-left">Nama</th>
                             <th class="px-6 py-3 text-left">Kelas</th>
                             <th class="px-6 py-3 text-left">Rayon</th>
-                            <th class="px-6 py-3 text-left">No. Telepon</th>
+                            <th class="px-6 py-3 text-left">No. no_telepon</th>
                             <th class="px-6 py-3 text-left">Aksi</th>
                         </tr>
                     </thead>

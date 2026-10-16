@@ -22,9 +22,9 @@
             <x-text-input id="alamat" class="block mt-1 w-full" type="text" name="alamat" :value="old('alamat')" required autocomplete="alamat" />  
         </div>
 
-        <!-- Telepon -->
+        <!-- no_telepon -->
         <div class="mt-4">
-            <x-input-label for="telepon" :value="__('Telepon')" />
+            <x-input-label for="telepon" :value="__('telepon')" />
             <x-text-input id="telepon" class="block mt-1 w-full" type="text" name="telepon" :value="old('telepon')" required autocomplete="telepon" />
         </div>
 
